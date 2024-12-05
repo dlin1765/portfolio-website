@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 
+  --mainColor: #2f3e46;
+  --headerColor: #354f52;
+  --specialTextColor: #84A98c;
+  --textColor:white;
 }
 
 a {
@@ -53,6 +57,11 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+p{
+  margin: 0;
+}
+
 
 li{
   font-size: clamp(4px, 1em, 16px);

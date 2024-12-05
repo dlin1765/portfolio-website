@@ -1,0 +1,7 @@
+.techParent{
+    border-radius: 5px;
+    border-color: var(--specialTextColor);
+    padding:1px 10px;
+    outline: 2px solid var(--specialTextColor);
+    color: var(--specialTextColor);
+}
