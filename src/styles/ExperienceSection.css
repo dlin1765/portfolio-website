@@ -1,0 +1,31 @@
+.experience{
+    display: flex;
+    gap:5vw;
+}
+
+.experienceSection{
+   flex-direction: row;
+}
+
+.experienceText{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+@media only screen and (max-width: 1024px){
+    .experienceText{
+        width: clamp(300px, 30vw, 301px)
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .experienceText{
+        width: clamp(100px, 30vw, 301px)
+    }
+
+    .experienceSection{
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+}

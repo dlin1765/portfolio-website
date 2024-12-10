@@ -8,7 +8,7 @@ import sunkenCostImg from '../assets/sunkencost.png';
 
 const style = `skillsSection bodyCardParent`
 
-function ProjectSection(){
+function OtherProjectSection(){
 
     return(
         <>
@@ -112,4 +112,4 @@ function ProjectSection(){
     );
 }
 
-export default ProjectSection
+export default OtherProjectSection
