@@ -76,7 +76,8 @@ li:hover{
 }
 
 .hidden{
-  display:none;
+  color: var(--mainColor);
+  gap:0px;
 }
 
 @keyframes fadeIn{

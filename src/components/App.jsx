@@ -6,6 +6,8 @@ import BodyCardIntro from './BodyCardIntro'
 import SkillsSection from './SkillsSection'
 import ProjectSection from './ProjectSection'
 import ExperienceSection from './ExperienceSection'
+import SmallProjectCard from './SmallProjectCard'
+import OtherProjectSection from './OtherProjectSection'
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
           <BodyCardIntro/>
           <ProjectSection/>
           <ExperienceSection/>
+          <OtherProjectSection/>
         </div>
     </>
   )
