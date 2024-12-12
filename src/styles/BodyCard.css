@@ -129,7 +129,7 @@
 }
 
 .gridContainer{
-    width:95%;
+    width:100%;
     margin: 0 auto;
 }
 
@@ -222,11 +222,6 @@
 }
 
 @media only screen and (max-width: 600px){
-
-
-    .otherProjectSection{
-        padding:0;
-    }
     .projectImg{
         width:100%;   
     }

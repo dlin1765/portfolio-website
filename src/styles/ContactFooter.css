@@ -51,7 +51,7 @@
 
 @media only screen and (max-width: 600px) {
     .contactItem{
-        flex-direction: column;
-        
+        flex-direction: column-reverse;
+        gap: 3vh;
     }
 }
