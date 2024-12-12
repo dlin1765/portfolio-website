@@ -8,6 +8,7 @@ import ProjectSection from './ProjectSection'
 import ExperienceSection from './ExperienceSection'
 import SmallProjectCard from './SmallProjectCard'
 import OtherProjectSection from './OtherProjectSection'
+import ContactFooter from './ContactFooter'
 
 function App() {
 
@@ -15,14 +16,23 @@ function App() {
     <>
         
         <div className="mainBody">
+          
           <Header/>
           <BodyCardIntro/>
           <ProjectSection/>
           <ExperienceSection/>
           <OtherProjectSection/>
+          <ContactFooter/>
         </div>
     </>
   )
 }
+/*
+          <Header/>
+          <BodyCardIntro/>
+          <ProjectSection/>
+          <ExperienceSection/>
+          <OtherProjectSection/>
+*/
 
 export default App

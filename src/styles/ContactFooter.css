@@ -1,0 +1,57 @@
+
+.contactContainer{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    align-items: center;
+    align-self: center;
+}
+
+.contactItem{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 8vw;
+    margin-bottom: 5vh;
+    width: 90%;
+    align-self: center;
+    align-items: center;
+}
+
+.linkContainer{
+    display: flex;
+    gap: 5vw;
+}
+
+.link{
+    letter-spacing: 0.1em;
+    color: white;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.text{
+    letter-spacing: 0.03em;
+}
+
+.link:hover{
+    transform: scale(1.2);
+    color: var(--specialTextColor);
+}
+
+@keyframes buttonHover{
+    from{
+      opacity: 1;
+      scale:1;
+    }
+  
+    to{
+      scale:1.5;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contactItem{
+        flex-direction: column;
+        
+    }
+}

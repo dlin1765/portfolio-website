@@ -23,6 +23,7 @@ function ExperienceSection(){
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
                     }}
+                    className='shouldAnimate'
                     >
                         <div className="experience">
                             <div className="experienceText">
@@ -45,7 +46,9 @@ function ExperienceSection(){
                         display:'flex',
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}>
+                    }}
+                    className='shouldAnimate'
+                    >
                         <div className="experience">
                             <div className="experienceText">
                                 <div className="projectTitle">
@@ -67,7 +70,9 @@ function ExperienceSection(){
                         display:'flex',
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}>
+                    }}
+                    className='shouldAnimate'
+                    >
                         <div className="experience">
                             <div className="experienceText">
                                 <div className="projectTitle">

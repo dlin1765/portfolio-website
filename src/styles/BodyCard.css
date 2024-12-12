@@ -70,9 +70,17 @@
     gap: 15vh;
 }
 
+.otherProjectSection{
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 100%;
+    padding: 0 10vw;
+}
+
 .otherProjectContainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(150px, auto);
     gap: 1em 1em;
 }
@@ -88,7 +96,7 @@
 }
 
 .imgProjects{
-    width: 500px;
+    width: clamp(200px, 30vw, 500px);
     object-fit: contain;
     border-radius: 5px;
 }
@@ -112,6 +120,19 @@
     gap: 0.5em;
 }
 
+.buttonContainer{
+    display: flex;
+    justify-content: end;
+    gap: clamp(1px, 5vw, 5.1vw);
+    align-self:flex-start;
+    margin-top: auto;
+}
+
+.gridContainer{
+    width:95%;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 768px) {
     .nav{
       display:none;
@@ -126,14 +147,10 @@
         margin-top: 0;
     }
  
-    .imgProjects{
-        width: 300px;
-    }
-
     .project{
         display: flex;
         gap:2.5vh;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .projectSection{
@@ -142,6 +159,25 @@
         justify-content: start;
         height: 100%;
         padding: 0 10vw;
+    }
+
+    .imgProjects{
+        width:100%;   
+    }
+
+    .otherProjectSection{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        padding: 0 10vw;
+    }
+
+    .otherProjectContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(150px, auto);
+        gap: 1em 1em;
     }
 
     .sectionTextHeader{
@@ -155,7 +191,43 @@
 }
 
 @media only screen and (max-width: 1024px){
+    .sectionTextHeader{
+        color: #84a98c;
+        width: 200px;
+        text-align: left;
+        margin-right: clamp(40px, 5vw, 70px);
+        white-space: nowrap;
+    }
+
+    .project{
+        display: flex;
+        gap:2.5vh;
+        flex-direction: column;
+    }
+
+    .projectSection{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        padding: 0 10vw;
+    }
+
+    .projectImg{
+        width:80%;   
+    }
     .imgProjects{
-        display:none;   
+        width:100%;   
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+
+    .otherProjectSection{
+        padding:0;
+    }
+    .projectImg{
+        width:100%;   
     }
 }

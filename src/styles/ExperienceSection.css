@@ -5,6 +5,7 @@
 
 .experienceSection{
    flex-direction: row;
+   height: 100%;
 }
 
 .experienceText{

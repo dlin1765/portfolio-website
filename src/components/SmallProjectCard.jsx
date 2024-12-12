@@ -6,7 +6,7 @@ function SmallProjectCard({title, children, description, demoLink, gitLink}){
     
     return(
         <>
-            <div className="projectCard" style={style}>
+            <div className="projectCard shouldAnimate" style={style}>
                 <div className='projectTitle' style = {projTitle}>
                     <strong>{title}</strong>
                 </div>
@@ -16,17 +16,17 @@ function SmallProjectCard({title, children, description, demoLink, gitLink}){
                 <div className="projectDescription" style = {projTitle}>
                     {description}
                 </div>
-                <div className="buttonContainer" style = {btnContainer}>
+                <div className="buttonContainer">
                     {demoLink ? 
                         <a href = {demoLink} target="_blank" rel="noopener noreferrer" pointerEvents ='all'>
                             <div className = 'btn'>
                                 <div>Demo</div>
                                 <img src={linkLogo} alt ='link logo' style={{width:'18px', height:'18px'}}/>
                             </div>
-                             
                         </a>
                         : 
-                        <></>}
+                        <></>
+                    }
                     {gitLink ?
                         <a href = {gitLink} target="_blank" rel="noopener noreferrer" pointerEvents ='all'>
                             <div className = 'btn'>
@@ -35,7 +35,8 @@ function SmallProjectCard({title, children, description, demoLink, gitLink}){
                             </div>
                         </a>
                         :
-                        <></>}
+                        <></>
+                    }
                 </div>
             </div>
         
@@ -51,16 +52,8 @@ const style = {
     padding: '2vh 1vw',
     display:'flex',
     flexDirection: 'column',
-    
 }
 
-const btnContainer ={
-    display: 'flex',
-    justifyContent: 'end',
-    gap: 'clamp(1px, 5vw, 5.1vw)',
-    alignSelf:'flex-start',
-    marginTop: 'auto',
-}
 
 const projTitle ={
     margin: '0 0 1em 0',

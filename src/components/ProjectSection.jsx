@@ -16,12 +16,14 @@ function ProjectSection(){
                 headerText={'FEATURED PROJECTS'}
                 extraStyle={'projectSection'}
             >
-                <div className = 'projectContainer'>
+                <div className = 'projectContainer '>
                     <div style ={{
                         display:'flex',
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
+                        
                     }}
+                        className='shouldAnimate'
                     >
                         <div className="project">
                             <div className="projectText">
@@ -52,7 +54,9 @@ function ProjectSection(){
                         display:'flex',
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}>
+                    }}
+                        className='shouldAnimate'
+                    >
                         <div className="project">
                             <div className="projectText">
                                 <div className="projectTitle">
@@ -82,7 +86,9 @@ function ProjectSection(){
                         display:'flex',
                         flexDirection: 'column',
                         gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}>
+                    }}
+                        className='shouldAnimate'
+                    >
                         <div className="project">
                             <div className="projectText">
                                 <div className="projectTitle">
