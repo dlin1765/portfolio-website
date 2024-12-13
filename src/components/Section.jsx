@@ -2,11 +2,11 @@ import '../styles/BodyCard.css'
 import '../styles/index.css'
 
 
-function Section({headerText, extraStyle, children}){
+function Section({headerText, extraStyle, children, id}){
     const style = `bodyCardParent ${extraStyle}`
     return(
         <>
-            <div className={style}>
+            <div className={style} id ={id}>
                 <p className='sectionTextHeader shouldAnimateFaster'><strong>{headerText}</strong></p>
                 <div className="sectionContent">
                     {children}

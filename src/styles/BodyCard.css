@@ -28,6 +28,11 @@
     list-style-type: none;
     gap: 3vw;
     align-self: center;
+    margin-right: 3vw;
+}
+
+li{
+    letter-spacing: 0.1em;
 }
 
 .skillSection{
@@ -41,7 +46,7 @@
     color: #84a98c;
     width: 200px;
     text-align: right;
-    margin-right: clamp(40px, 5vw, 70px);
+    margin-right: clamp(30px, 2.5vw, 70px);
     white-space: nowrap;
 }
 
@@ -61,7 +66,7 @@
     flex-direction: row;
     justify-content: start;
     height: 100%;
-    padding: 0 10vw;
+    padding: 0 15vw 0 10vw;
 }
 
 .projectContainer{
@@ -87,16 +92,27 @@
 
 .project{
     display: flex;
-    gap:5vw;
+    gap:1.5vw;
 }
 
 .projectText{
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    width:clamp(250px, 20vw, 500px);
 }
 
+.projectTitle{
+    color: var(--textColor);
+}
+/*
+.projectDescription{
+    margin: 0 0 auto 0;
+}
+    */
+
 .imgProjects{
-    width: clamp(200px, 30vw, 500px);
+    width: clamp(100px, 40vw, 800px);
     object-fit: contain;
     border-radius: 5px;
 }
@@ -120,6 +136,20 @@
     gap: 0.5em;
 }
 
+.btn2{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 10px;
+    padding:5px 15px;
+    color: var(--mainColor);
+    display:flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.btnText{
+    color: white;
+}
+
 .buttonContainer{
     display: flex;
     justify-content: end;
@@ -131,6 +161,23 @@
 .gridContainer{
     width:100%;
     margin: 0 auto;
+}
+
+.arrowLink{
+  display:flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.arrowLink:hover .rightArrow{
+    transform: translateX(1vw);
+}
+
+
+.rightArrow{
+    width: 27px;
+    transform: translateX(0vw);
+    transition: transform 0.2s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -196,6 +243,7 @@
         width: 200px;
         text-align: left;
         margin-right: clamp(40px, 5vw, 70px);
+        margin-bottom: 2.5em;
         white-space: nowrap;
     }
 
@@ -212,13 +260,26 @@
         height: 100%;
         padding: 0 10vw;
     }
-
+    
     .projectImg{
-        width:80%;   
+        width:100%;   
     }
     .imgProjects{
         width:100%;   
     }
+    .projectText{
+        width:100%;
+    }
+
+    .hidden{
+        display:none;
+    }
+
+    .otherProjectSection{
+        flex-direction: column;
+    }
+
+    
 }
 
 @media only screen and (max-width: 600px){

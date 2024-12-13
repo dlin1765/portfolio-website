@@ -3,7 +3,7 @@ import '../styles/ContactFooter.css'
 function ContactFooter(){
     return(
         <>
-            <div className="contactItem">
+            <div className="contactItem" id = 'contact'>
                 <div className="text">
                     Developed by Daniel Lin 2024
                 </div>

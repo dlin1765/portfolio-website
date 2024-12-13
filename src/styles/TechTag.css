@@ -4,4 +4,6 @@
     padding:1px 10px;
     outline: 2px solid var(--specialTextColor);
     color: var(--specialTextColor);
+    font-size: clamp(8px, 1em, 16px);
+    white-space: nowrap;
 }

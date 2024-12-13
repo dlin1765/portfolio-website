@@ -18,6 +18,7 @@ function OtherProjectSection(){
             <Section
                 headerText={'OTHER PROJECTS'}
                 extraStyle={'otherProjectSection'}
+                id='otherProjects'
             >
                  <div className='hidden'>invis</div>
                 <div className='gridContainer'>

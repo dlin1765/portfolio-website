@@ -14,9 +14,26 @@
     width: 40vw;
 }
 
+.experienceItem{
+    display:flex;
+    flex-direction: column;
+    gap:clamp(1vh, 16px, 1.5vh);
+}
+
 @media only screen and (max-width: 1024px){
     .experienceText{
         width: clamp(300px, 30vw, 301px)
+    }
+    .experienceSection{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 100%;
+        padding: 0 10vw;
+    }
+    .experience{
+        justify-content: space-between;
+        gap:0;
     }
 }
 

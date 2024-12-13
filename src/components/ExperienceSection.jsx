@@ -16,14 +16,11 @@ function ExperienceSection(){
             <Section
                 headerText={'EXPERIENCE'}
                 extraStyle={'experienceSection'}
+                id = 'experiences'
             >
                 <div className = 'projectContainer'>
-                    <div style ={{
-                        display:'flex',
-                        flexDirection: 'column',
-                        gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}
-                    className='shouldAnimate'
+                    <div 
+                    className='experienceItem shouldAnimate'
                     >
                         <div className="experience">
                             <div className="experienceText">
@@ -42,12 +39,8 @@ function ExperienceSection(){
                             </div>
                         </div>
                     </div>
-                    <div style ={{
-                        display:'flex',
-                        flexDirection: 'column',
-                        gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}
-                    className='shouldAnimate'
+                    <div 
+                    className='experienceItem shouldAnimate'
                     >
                         <div className="experience">
                             <div className="experienceText">
@@ -66,12 +59,8 @@ function ExperienceSection(){
                             </div>
                         </div>
                     </div>
-                    <div style ={{
-                        display:'flex',
-                        flexDirection: 'column',
-                        gap: 'clamp(1vh, 16px, 1.5vh)'
-                    }}
-                    className='shouldAnimate'
+                    <div 
+                    className='experienceItem shouldAnimate'
                     >
                         <div className="experience">
                             <div className="experienceText">

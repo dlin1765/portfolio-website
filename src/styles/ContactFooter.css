@@ -9,10 +9,9 @@
 
 .contactItem{
     display:flex;
-    justify-content: space-between;
-    padding: 0 8vw;
+    justify-content: space-around;
     margin-bottom: 5vh;
-    width: 90%;
+    width: 100%;
     align-self: center;
     align-items: center;
 }
