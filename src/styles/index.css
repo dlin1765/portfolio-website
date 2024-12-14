@@ -13,8 +13,9 @@
   box-sizing: border-box;
 
   --mainColor: #2f3e46;
-  --headerColor: #354f52;
-  --specialTextColor: #84A98c;
+  --mainColorShade: #2C3A41;
+  --headerColor: #171F23;
+  --specialTextColor: #3a86ff;
   --textColor:white;
 }
 
@@ -96,6 +97,9 @@ li:hover{
     transform: translateX(0vw);
   }
 }
+
+
+
 
 .shouldAnimate{
   animation: fadeIn linear;

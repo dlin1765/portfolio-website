@@ -1,35 +1,41 @@
 .bodyCardParent{
     display:flex;
     flex-direction: column;
-    height: 90vh;
+    height: 92vh;
     padding: 0 10vw;
-    margin: 0 0 25vh 0;
+    margin: 0 0 12.5vh 0;
     justify-content:center;
- 
+    align-items: start;
+}
+
+.introCard{
+    
+}
+
+.introText{
+    display: flex;
+    flex-direction: column;
 }
 
 .h1Intro{
-    color: white;
-    margin-top: 10vh;
+    color: var(--textColor);
+    letter-spacing: 0.02em;
 }
 
 .h2Intro{
-    color: white;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.bottom{
+    margin-bottom: 8vh;
 }
 
 .filler{
     flex: 1 1 50%;
 }
 
-.nav{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    gap: 3vw;
-    align-self: center;
-    margin-right: 3vw;
-}
+
 
 li{
     letter-spacing: 0.1em;
@@ -43,7 +49,7 @@ li{
 }
 
 .sectionTextHeader{
-    color: #84a98c;
+    color: var(--specialTextColor);
     width: 200px;
     text-align: right;
     margin-right: clamp(30px, 2.5vw, 70px);
@@ -65,8 +71,11 @@ li{
     display:flex;
     flex-direction: row;
     justify-content: start;
+    align-items: start;
     height: 100%;
-    padding: 0 15vw 0 10vw;
+    padding: 12.5vh 15vw 12.5vh 10vw;
+    background-color: var(--mainColorShade);
+    
 }
 
 .projectContainer{
@@ -79,8 +88,11 @@ li{
     display:flex;
     flex-direction: row;
     justify-content: start;
+    align-items: start;
     height: 100%;
-    padding: 0 10vw;
+    padding: 12.5vh 10vw 25vh 10vw;
+    margin: 0;
+    background-color: var(--mainColorShade);
 }
 
 .otherProjectContainer{
@@ -173,19 +185,13 @@ li{
     transform: translateX(1vw);
 }
 
-
 .rightArrow{
     width: 27px;
     transform: translateX(0vw);
     transition: transform 0.2s;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav{
-      display:none;
-    }
- 
-}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -278,8 +284,6 @@ li{
     .otherProjectSection{
         flex-direction: column;
     }
-
-    
 }
 
 @media only screen and (max-width: 600px){

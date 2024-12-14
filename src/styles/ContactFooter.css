@@ -5,15 +5,17 @@
     margin-bottom: 5vh;
     align-items: center;
     align-self: center;
+    background: var(--mainColorShade);
 }
 
 .contactItem{
     display:flex;
     justify-content: space-around;
-    margin-bottom: 5vh;
+    padding-bottom: 5vh;
     width: 100%;
     align-self: center;
     align-items: center;
+    background-color: var(--mainColorShade);
 }
 
 .linkContainer{
@@ -47,6 +49,7 @@
       scale:1.5;
     }
 }
+
 
 @media only screen and (max-width: 600px) {
     .contactItem{

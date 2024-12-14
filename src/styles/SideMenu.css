@@ -1,0 +1,57 @@
+.sideMenuParent{
+}
+
+.sideMenuContent{
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    margin-top: 8vh;
+    right: 0px;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    display: flex;
+    padding:0 5vw;
+    background-color: var(--headerColor);
+    animation: menuIn ease-in-out;
+    animation-timeline: auto;
+    animation-duration: 300ms;
+}
+
+@keyframes menuIn{
+    from{
+      opacity: 0;
+      transform: translateY(-8vh);
+    }
+  
+    to{
+      opacity: 1;
+      transform: translateY(0vw);
+    }
+  }
+
+
+.menuOptions{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menuLogo{
+    height: 48px;
+}
+
+.exitDiv{
+    position: absolute;
+    height: 100vh;
+    width: 75vw;
+    top: 0px;
+    left: 0px;
+}
+
+.invisButton:hover{
+    cursor: pointer;
+}

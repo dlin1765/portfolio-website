@@ -2,8 +2,32 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 3vh 0px 3vh 0px;
+
     gap: 3vw;
-    background-color: #354F52;
-    top: 0px
+    background-color: var(--headerColor);
+    top: 0px;
+    position:sticky;
+    height: 8vh;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
+
+.nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 3vw;
+    align-self: center;
+    margin-right: 3vw;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*
+    .headerParent{
+        padding: 1.5vh 0px 1.5vh 0px;
+    }
+        */
+ 
 }
