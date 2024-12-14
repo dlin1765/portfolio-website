@@ -25,7 +25,7 @@ function ExperienceSection(){
                     >
                         <div className="experience">
                             <div className="experienceText">
-                                <a href="https://www.colorbreathingvr.com/" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://www.colorbreathingvr.com/" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>Color Breathing VR LLC</strong>
                                     </div>
@@ -48,7 +48,7 @@ function ExperienceSection(){
                     >
                         <div className="experience">
                             <div className="experienceText">
-                                <a href="https://www.mylearningtools.org/" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://www.mylearningtools.org/" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>Resilience Inc</strong>
                                     </div>
@@ -71,7 +71,7 @@ function ExperienceSection(){
                     >
                         <div className="experience">
                             <div className="experienceText">
-                                <a href="https://richardtbeard.wixsite.com/tsare" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://richardtbeard.wixsite.com/tsare" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>T'sarE LLC</strong>
                                     </div>
@@ -90,7 +90,7 @@ function ExperienceSection(){
                         </div>
                     </div>
                     <div className="resume">
-                        <a href="src/assets/d2full.png" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                        <a href="src/assets/d2full.png" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                             <div className="projectTitle">
                                 <strong>View my resume</strong>
                             </div>

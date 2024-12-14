@@ -20,7 +20,7 @@ function ProjectSection(){
                 extraStyle={'projectSection'}
                 id='projects'
             >
-                <div className = 'projectContainer '>
+                <div className = 'projectContainer'>
                     <div style ={{
                         display:'flex',
                         flexDirection: 'column',
@@ -31,7 +31,7 @@ function ProjectSection(){
                     >
                         <div className="project">
                             <div className="projectText">
-                                <a href="https://www.down2react.com/" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://www.down2react.com/" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>Down 2 React</strong>
                                     </div>
@@ -70,7 +70,7 @@ function ProjectSection(){
                     >
                         <div className="project">
                             <div className="projectText">
-                                <a href="https://youtu.be/NEsdnIBBl48?si=ZWC9RNc0okb0VMKH" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://youtu.be/NEsdnIBBl48?si=ZWC9RNc0okb0VMKH" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>Sinigang</strong>
                                     </div>
@@ -106,7 +106,7 @@ function ProjectSection(){
                     >
                         <div className="project">
                             <div className="projectText">
-                                <a href="https://devpost.com/software/sunken-cost" target="_blank" rel="noopener noreferrer" class ='arrowLink'>
+                                <a href="https://devpost.com/software/sunken-cost" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
                                     <div className="projectTitle">
                                         <strong>Sunken Cost</strong>
                                     </div>

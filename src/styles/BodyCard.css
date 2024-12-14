@@ -8,10 +8,20 @@
     align-items: start;
 }
 
-.introCard{
-    
+.introParent{
+    padding: 0 12vw;
 }
 
+.introText{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.highlight{
+    color: var(--specialTextColor);
+    font-weight: normal;
+}
 .introText{
     display: flex;
     flex-direction: column;
@@ -19,16 +29,49 @@
 
 .h1Intro{
     color: var(--textColor);
+    font-size: clamp(1em, 4vw, 4em);
     letter-spacing: 0.02em;
+
 }
 
 .h2Intro{
     color: var(--textColor);
     margin: 0;
+    font-size: clamp(1em, 3vw, 3em);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+.introDescription{
+    font-size: clamp(1em, 2vw, 1.5em);
+    font-weight: 10;
+}
+
+.learning{
+    margin-top: 3vh;
+    font-size: clamp(1em, 2vw, 1.5em);
+    color: rgb(192, 191, 191);
 }
 
 .bottom{
     margin-bottom: 8vh;
+}
+
+.picIntro{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 5vh;
+}
+
+.picText{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introPic{
+    height: clamp(1em, 25vw, 15.625em);
+    border-radius: 15px;
 }
 
 .filler{
@@ -138,7 +181,7 @@ li{
 }
 
 .btn{
-    border-radius: 5px;
+    border-radius: 20px;
     border-color: var(--specialTextColor);
     padding:1px 10px;
     outline: 2px solid var(--specialTextColor);
@@ -146,6 +189,12 @@ li{
     display:flex;
     align-items: center;
     gap: 0.5em;
+    font-size: 1em;
+    background-color: var(--specialTextColor);
+}
+
+.buttonText{
+    color: black;
 }
 
 .btn2{
@@ -245,7 +294,6 @@ li{
 
 @media only screen and (max-width: 1024px){
     .sectionTextHeader{
-        color: #84a98c;
         width: 200px;
         text-align: left;
         margin-right: clamp(40px, 5vw, 70px);
@@ -264,7 +312,6 @@ li{
         flex-direction: column;
         justify-content: start;
         height: 100%;
-        padding: 0 10vw;
     }
     
     .projectImg{
@@ -289,5 +336,14 @@ li{
 @media only screen and (max-width: 600px){
     .projectImg{
         width:100%;   
+    }
+
+    .picIntro{
+        flex-direction: column-reverse;
+    }
+    
+    .introPic{
+        width: 80%;
+        height: 80%;
     }
 }

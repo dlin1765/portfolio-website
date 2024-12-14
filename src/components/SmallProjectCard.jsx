@@ -20,7 +20,7 @@ function SmallProjectCard({title, children, description, demoLink, gitLink}){
                     {demoLink ? 
                         <a href = {demoLink} target="_blank" rel="noopener noreferrer" pointerEvents ='all'>
                             <div className = 'btn'>
-                                <div>Demo</div>
+                                <div className='buttonText'>Demo</div>
                                 <img src={linkLogo} alt ='link logo' style={{width:'18px', height:'18px'}}/>
                             </div>
                         </a>
@@ -30,7 +30,7 @@ function SmallProjectCard({title, children, description, demoLink, gitLink}){
                     {gitLink ?
                         <a href = {gitLink} target="_blank" rel="noopener noreferrer" pointerEvents ='all'>
                             <div className = 'btn'>
-                                <div>Github</div>
+                                <div className='buttonText'>Github</div>
                                 <img src={gitLogo} alt ='git logo' style={{width:'18px', height:'18px'}}/>
                             </div>
                         </a>
