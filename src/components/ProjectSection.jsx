@@ -5,6 +5,7 @@ import TechTag from './TechTag';
 import d2Img from '../assets/d2full.png';
 import sinigangImg from '../assets/sinigang.png';
 import sunkenCostImg from '../assets/sunkencost.png';
+import lobbyLinkableImg from '../assets/lobbylinkablepic.png'
 import rightArrow from '../assets/arrow-right-svgrepo-com.svg'
 import gitLogo from '../assets/github-mark.svg';
 import linkLogo from '../assets/external-link-svgrepo-com.svg';
@@ -96,7 +97,46 @@ function ProjectSection(){
                                 </img>
                             </div>
                         </div>
+                    </div>
+                    <div style ={{
+                        display:'flex',
+                        flexDirection: 'column',
+                        gap: 'clamp(1vh, 16px, 1.5vh)'
+                    }}
+                        className='shouldAnimate'
+                    >
+                        <div className="project">
+                            <div className="projectText">
+                                <a href="https://lobbylinkable.com" target="_blank" rel="noopener noreferrer" className ='arrowLink'>
+                                    <div className="projectTitle">
+                                        <strong>Lobby Linkable</strong>
+                                    </div>
+                                    <img src = {rightArrow} className='rightArrow'></img>
+                                </a>
+                                <div className="projectDescription">
+                                    A site to help users setup Lobby Generator, a program that fetches and copies your Steam lobby link while you're still in game to your clipboard and makes it clickable. Utilizes URL parameters and React Router to redirect users to the Steam lobby.
+                                    Automatically launches when you load up a Steam game. 
+                                </div>
+                                <div className='techList'>
+                                    <TechTag content ={'React'}/>
+                                    <TechTag content ={'Node.js'}/>
+                                    <TechTag content={'HTML/CSS'}/>
+                                    <TechTag content={'Javascript'}/>
+                                    <TechTag content={'Python'}/>
+                                    <TechTag content={'AWS'}/>
+                                    <TechTag content={'Nginx'}/>
+                                </div>
+                            </div>
+                            <div className="projectImg">
+                                <img
+                                    className='imgProjects'
+                                    src= {lobbyLinkableImg}
+                                >
+                                </img>
+                            </div>
                         </div>
+                        
+                    </div>
                     <div style ={{
                         display:'flex',
                         flexDirection: 'column',
@@ -133,6 +173,7 @@ function ProjectSection(){
                         </div>
                         
                     </div>
+                    
                 </div>
 
             </Section>
